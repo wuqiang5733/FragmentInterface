@@ -27,7 +27,7 @@ public class FragmentTest extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        callbacks.onCallback();
+        callbacks.onCallback("This come from Fragment");
 
     }
 //    @Override
@@ -50,6 +50,6 @@ public class FragmentTest extends Fragment implements View.OnClickListener {
 
 
     public interface Callbacks {
-        void onCallback();
+        void onCallback(String str);
     }
 }

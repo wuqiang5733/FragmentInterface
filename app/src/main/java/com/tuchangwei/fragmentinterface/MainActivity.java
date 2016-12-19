@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity implements FragmentTest.Call
     }
 
     @Override
-    public void onCallback() {
-        Toast.makeText(this,"Another way",Toast.LENGTH_LONG).show();
+    public void onCallback(String str) {
+        Toast.makeText(this,str,Toast.LENGTH_LONG).show();
 
     }
 }
